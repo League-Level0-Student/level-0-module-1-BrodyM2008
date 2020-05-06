@@ -1,4 +1,7 @@
 package _04_int._1_riddler;
+
+import javax.swing.JOptionPane;
+
 //    Copyright (c) The League of Amazing Programmers 2013-2019
 //    Level 0
 
@@ -7,19 +10,32 @@ package _04_int._1_riddler;
 public class TheRiddler {
 
 	public static void main(String[] args) {
+		int score = 0;
 
-		// 1. Make a variable to hold the score
+String Piano =	JOptionPane.showInputDialog("What has many keys, but can't open a single lock?");
 
-		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
+		if (Piano.equals("piano")){
+			JOptionPane.showInputDialog("Correct!");
+			score ++;
+			
+			
+			
+		}
+		else {
+			JOptionPane.showInputDialog("Wrong, It's Piano!");
+		}
 
-		// 4. If they got the answer right, pop up "correct!" and increase the score by one
-
-		// 5. Otherwise, say "wrong" and tell them the answer
-
-		// 6. Add some more riddles
-
-		// 2. Make a pop up to show the score.
 		
+	String Fence = JOptionPane.showInputDialog("What runs all the way around the backyard, but doens't move?");
+		
+	if (Fence.equals("fence")) {
+		JOptionPane.showInputDialog("Correct!");
+		score ++;
+	}
+	else {
+		JOptionPane.showInputDialog("Wrong, It's fence!");
+	}
 	}
 }
+			
 
